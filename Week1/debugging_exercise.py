@@ -9,7 +9,6 @@ guess = int(input())  # number needs to be an integer
 numberGuess = int(1)  # create integer variable that stores number of guesses
 
 while guess != rand:  # if the guess is not equal to the random number, you have to guess again
-    numberGuess = numberGuess + 1  # number of guesses incremented by 1
     if guess > rand:  # if the guess is too high, tell the user.
         print('Too high. Guess again.')
     else:  # if the guess is too low, tell the user.
@@ -17,5 +16,6 @@ while guess != rand:  # if the guess is not equal to the random number, you have
 
     print('Enter a new guess: ')
     guess = int(input())
+    numberGuess = numberGuess + 1  # number of guesses incremented by 1
 
 print('You got it in {} guesses! The number was {}'.format(numberGuess, rand))
