@@ -18,4 +18,8 @@ while guess != rand:  # if the guess is not equal to the random number, you have
     guess = int(input())
     numberGuess = numberGuess + 1  # number of guesses incremented by 1
 
-print('You got it in {} guesses! The number was {}'.format(numberGuess, rand))
+if numberGuess == 1:  # If user guesses number straight away print below
+    print('You got it in 1 guess, WOW! The number was {}'.format(rand))
+
+else:  # Else print below
+    print('You got it in {} guesses! The number was {}'.format(numberGuess, rand))
